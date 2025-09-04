@@ -69,7 +69,7 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     },
     {
       id: 6,
-      src: 'https://i.postimg.cc/1tNR7Xxb/Screenshot-2025-09-04-163020.png',
+      src: 'https://i.postimg.cc/66VK9Rzc/Akido-Malabela-4.jpg',
       title: 'Senior Portraits',
       category: 'portrait',
       description: 'Graduation memories that last a lifetime'
@@ -83,7 +83,7 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     },
     {
       id: 8,
-      src: 'https://i.postimg.cc/Y9spQwG3/48-Diana-Tsutsa.jpg',
+      src: 'https://i.postimg.cc/wjtrmmhK/Screenshot-2025-09-04-163218.png',
       title: 'Maternity Session',
       category: 'portrait',
       description: 'Beautiful expecting mother portraits'

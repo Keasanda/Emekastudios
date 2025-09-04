@@ -72,21 +72,21 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
       images: [
         {
           id: 7,
-          src: 'https://i.postimg.cc/Y9spQwG3/48-Diana-Tsutsa.jpg',
+          src: 'https://i.postimg.cc/9MjPVvFL/Alvada-4.jpg',
           title: 'Family Portrait Session',
           description: 'Capturing family bonds and connections in a natural outdoor setting',
           date: 'June 2024'
         },
         {
           id: 8,
-          src: 'https://i.postimg.cc/9MjPVvFL/Alvada-4.jpg',
+          src: 'https://i.postimg.cc/mgq0Xwb2/Screenshot-2025-09-04-164935.png',
           title: 'Senior Portraits',
           description: 'Graduation memories that last a lifetime with professional styling',
           date: 'May 2024'
         },
         {
           id: 9,
-          src: 'https://i.postimg.cc/66VK9Rzc/Akido-Malabela-4.jpg',
+          src: 'https://i.postimg.cc/Y9spQwG3/48-Diana-Tsutsa.jpg',
           title: 'Professional Headshots',
           description: 'Corporate headshots with personality and professional appeal',
           date: 'April 2024'
