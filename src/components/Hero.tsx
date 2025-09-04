@@ -32,9 +32,11 @@ const Hero: React.FC<HeroProps> = ({ onGalleryClick }) => {
          
         </div>
         
-       <h1 className="text-5xl md:text-5x1 font-bold mb-6 animate-fade-in text-gray-200">
+      <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in text-gray-200">
   Emeka Studios 
-  <span className="text-orange-500 block text-1x2">Bringing stories to life through photography, video, and content creation.</span>
+  <span className="text-orange-500 block text-xl md:text-5xl mt-4 md:mt-6">
+    Bringing stories to life through photography, video, and content creation.
+  </span>
 </h1>
         <p className="text-xl md:text-4xl mb-8 text-white-400 max-w-2xl mx-auto">
       Visual storytelling for brands, businesses, and creatives. We help you connect, grow, and leave a lasting impact.
