@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, Camera } from 'lucide-react';
+import { ArrowLeft, Camera, X } from 'lucide-react';
 
 interface GalleryImage {
   id: number;
@@ -318,81 +318,94 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
         </div>
       </div>
 
-      {/* Image Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {/* Image Grid - Updated with CodePen style */}
+      <div className="gallery p-8">
+        <div className="flex flex-wrap justify-center">
           {currentCategory.images.map((image) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+              className="gallery-tile m-2 overflow-hidden relative cursor-pointer"
+              style={{ minWidth: '200px', maxWidth: '28vw' }}
               onClick={() => setSelectedImage(image)}
             >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={image.src}
-                  alt={image.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+              <div className="picture-info absolute inset-0 z-10 text-white flex flex-col justify-center items-start opacity-0 transition-opacity duration-300">
+                <h2 className="text-2xl font-oswald font-light uppercase tracking-wide m-4">{image.title}</h2>
+                <p className="m-4 text-sm">{image.date}</p>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 right-4 text-gray-200">
-                  <h3 className="font-bold mb-1 text-sm">{image.title}</h3>
-                  <p className="text-gray-300 text-xs">{image.date}</p>
-                </div>
-              </div>
+              <img
+                src={image.src}
+                alt={image.title}
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+              />
             </div>
           ))}
         </div>
       </div>
 
-      {/* Image Modal - Adjusted sizing */}
+      {/* Image Modal - Updated with CodePen style */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black flex items-center justify-center p-4">
-          <div className="relative max-w-5xl w-full max-h-[90vh] overflow-y-auto bg-gray-900 rounded-2xl shadow-2xl">
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 z-10 bg-black/70 text-white p-3 rounded-full hover:bg-orange-500 transition-colors"
-            >
-              <ArrowLeft className="w-6 h-6" />
-            </button>
-            
-            <div className="p-1">
-              <div className="max-h-[65vh] overflow-hidden flex items-center justify-center">
-                <img
-                  src={selectedImage.src}
-                  alt={selectedImage.title}
-                  className="w-full h-auto max-h-[65vh] object-contain rounded-t-2xl"
-                />
-              </div>
+        <div className="imageview-wrapper fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 animate-fadeIn">
+          <div className="imageview flex flex-col md:flex-row items-center justify-center p-4">
+            <div className="imageview-image w-full md:w-1/2 h-96 md:h-auto mb-6 md:mb-0 md:mr-8">
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.title}
+                className="w-full h-full object-contain rounded-lg shadow-xl"
+                style={{ boxShadow: '0 20px 40px -5px rgba(66,66,66,0.7)' }}
+              />
+            </div>
+            <div className="imageview-info text-white text-right max-w-md relative">
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute -top-8 -right-4 text-orange-500 text-2xl font-oswald font-light uppercase hover:scale-125 transition-transform duration-300"
+              >
+                <X className="w-8 h-8" />
+              </button>
+              <h2 className="text-3xl font-oswald font-light uppercase tracking-wide mt-0 mb-4">
+                {selectedImage.title}
+              </h2>
+              <p className="mb-4">{selectedImage.description}</p>
+              <p className="text-orange-500 font-medium mb-6">{selectedImage.date}</p>
+              <h3 className="text-xl font-oswald font-light uppercase tracking-wide mb-2">Category</h3>
+              <ul className="list-none mb-6">
+                <li className="capitalize">{category}</li>
+              </ul>
               
-              <div className="p-6">
-                <div className="flex flex-col md:flex-row md:items-start justify-between mb-6 gap-4">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-200 mb-2">{selectedImage.title}</h3>
-                    <p className="text-white text-lg mb-2">{selectedImage.description}</p>
-                    <p className="text-orange-500 font-medium">{selectedImage.date}</p>
-                  </div>
-                  <div className="flex space-x-2">
-                
-                  </div>
-                </div>
-                
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <span className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium capitalize">
-                    {category} Photography
-                  </span>
-                  <button 
-                    onClick={handleBookSession}
-                    className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-                  >
-                    Book Similar Session
-                  </button>
-                </div>
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <span className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium capitalize">
+                  {category} Photography
+                </span>
+                <button 
+                  onClick={handleBookSession}
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Book Similar Session
+                </button>
               </div>
             </div>
           </div>
         </div>
       )}
+
+      <style jsx>{`
+        .gallery-tile:hover img {
+          transform: scale(1.1);
+          filter: brightness(80%);
+        }
+        .gallery-tile:hover .picture-info {
+          opacity: 1;
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+        .font-oswald {
+          font-family: 'Oswald', sans-serif;
+        }
+      `}</style>
     </div>
   );
 };

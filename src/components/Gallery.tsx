@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft} from 'lucide-react';
+import { ArrowLeft, X } from 'lucide-react';
 
 interface GalleryImage {
   id: number;
@@ -203,70 +203,84 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
         </div>
       </div>
 
-      {/* Gallery Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {/* Gallery Grid - Updated with CodePen style */}
+      <div className="gallery p-8">
+        <div className="flex flex-wrap justify-center">
           {filteredImages.map((image) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+              className="gallery-tile m-2 overflow-hidden relative cursor-pointer"
+              style={{ minWidth: '200px', maxWidth: '28vw' }}
               onClick={() => setSelectedImage(image)}
             >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={image.src}
-                  alt={image.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+              <div className="picture-info absolute inset-0 z-10 text-white flex flex-col justify-center items-start opacity-0 transition-opacity duration-300">
+                <h2 className="text-2xl font-oswald font-light uppercase tracking-wide m-4">{image.title}</h2>
+                <p className="m-4">{image.description}</p>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 right-4 text-gray-200">
-                  <h3 className="font-bold mb-1">{image.title}</h3>
-                  <p className="text-gray-300 text-sm">{image.description}</p>
-                </div>
-              </div>
+              <img
+                src={image.src}
+                alt={image.title}
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+              />
             </div>
           ))}
         </div>
       </div>
 
-      {/* Image Modal */}
+      {/* Image Modal - Updated with CodePen style */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black z-50 flex items-center justify-center p-4">
-          <div className="relative max-w-4xl w-full">
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-gray-300 hover:text-orange-500 transition-colors z-10"
-            >
-              <ArrowLeft className="w-6 h-6" />
-            </button>
-            
-            <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={selectedImage.src}
-                  alt={selectedImage.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-200 mb-2">{selectedImage.title}</h3>
-                    <p className="text-white">{selectedImage.description}</p>
-                  </div>
-                  <div className="flex space-x-2">
-              
-                  </div>
-                </div>
-                <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium capitalize">
-                  {selectedImage.category}
-                </span>
-              </div>
+        <div className="imageview-wrapper fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 animate-fadeIn">
+          <div className="imageview flex flex-col md:flex-row items-center justify-center p-4">
+            <div className="imageview-image w-full md:w-1/2 h-96 md:h-auto mb-6 md:mb-0 md:mr-8">
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.title}
+                className="w-full h-full object-contain rounded-lg shadow-xl"
+                style={{ boxShadow: '0 20px 40px -5px rgba(66,66,66,0.7)' }}
+              />
+            </div>
+            <div className="imageview-info text-white text-right max-w-md relative">
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute -top-8 -right-4 text-orange-500 text-2xl font-oswald font-light uppercase hover:scale-125 transition-transform duration-300"
+              >
+                <X className="w-8 h-8" />
+              </button>
+              <h2 className="text-3xl font-oswald font-light uppercase tracking-wide mt-0 mb-4">
+                {selectedImage.title}
+              </h2>
+              <p className="mb-6">{selectedImage.description}</p>
+              <h3 className="text-xl font-oswald font-light uppercase tracking-wide mb-2">Category</h3>
+              <ul className="list-none mb-6">
+                <li className="capitalize">{selectedImage.category}</li>
+              </ul>
+              <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium capitalize">
+                {selectedImage.category}
+              </span>
             </div>
           </div>
         </div>
       )}
+
+      <style jsx>{`
+        .gallery-tile:hover img {
+          transform: scale(1.1);
+          filter: brightness(80%);
+        }
+        .gallery-tile:hover .picture-info {
+          opacity: 1;
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+        .font-oswald {
+          font-family: 'Oswald', sans-serif;
+        }
+      `}</style>
     </div>
   );
 };
