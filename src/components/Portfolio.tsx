@@ -14,7 +14,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
     { id: 'wedding', name: 'Weddings' },
     { id: 'portrait', name: 'Portraits' },
     { id: 'event', name: 'Events' },
-    { id: 'lifestyle', name: 'Lifestyle & Real Estate' }
+    { id: 'lifestyle', name: 'Lifestyle & Real Estate' },
+    { id: 'product', name: 'Product Photography' }
   ];
 
   const portfolioItems = [
@@ -60,12 +61,11 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
     },
     {
       id: 6,
-      category: 'all',
-      image: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      title: 'View All Work',
-      description: 'Complete portfolio across all photography categories',
-      count: '200+ Images',
-      isViewAll: true
+      category: 'product',
+      image: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      title: 'Product Photography',
+      description: 'Professional product shots for e-commerce and marketing',
+      count: '60+ Products'
     }
   ];
 
@@ -106,13 +106,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
             <div 
               key={item.id} 
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-              onClick={() => {
-                if (item.isViewAll) {
-                  onGalleryClick();
-                } else {
-                  onCategorySelect(item.category);
-                }
-              }}
+              onClick={() => onCategorySelect(item.category)}
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -131,7 +125,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
                   </div>
                   <div className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg transition-colors duration-300 inline-flex items-center space-x-2">
                     <ExternalLink className="w-4 h-4" />
-                    <span>{item.isViewAll ? 'View All' : 'View Gallery'}</span>
+                    <span>View Gallery</span>
                   </div>
                 </div>
               </div>

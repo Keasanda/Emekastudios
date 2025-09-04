@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
+import VideoShowcase from './components/VideoShowcase'; // Add this import
 import Impact from './components/Impact';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -45,6 +46,7 @@ function App() {
           setCurrentPage('category');
         }}
       />
+      <VideoShowcase /> {/* Add this line */}
       <Impact />
       <Contact />
       <Footer />

@@ -232,7 +232,7 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
           id: 27,
           src: 'https://i.postimg.cc/ZR5SdqH1/Shared-from-Lightroom-mobile.jpg',
           title: 'Office Environment',
-          description: 'Professional workplace photography showcasing company culture',
+      description: 'Professional workplace photography showcasing company culture',
           date: 'April 2024'
         },
         {
@@ -254,6 +254,54 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
           src: 'https://i.postimg.cc/PxSd3DNX/2025-03-18-TB-PROOF-SYMPOSIUM-026.jpg',
           title: 'Company Culture',
           description: 'Authentic workplace moments showcasing team collaboration',
+          date: 'January 2024'
+        }
+      ]
+    },
+    product: {
+      title: 'Product Photography',
+      description: 'Professional product photography that showcases your products in the best light',
+      images: [
+        {
+          id: 31,
+          src: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          title: 'E-commerce Product Shot',
+          description: 'Clean product photography for online stores and catalogs',
+          date: 'June 2024'
+        },
+        {
+          id: 32,
+          src: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          title: 'Lifestyle Product Photography',
+          description: 'Products shown in natural use contexts and environments',
+          date: 'May 2024'
+        },
+        {
+          id: 33,
+          src: 'https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          title: 'Food Photography',
+          description: 'Appetizing food and beverage photography for menus and marketing',
+          date: 'April 2024'
+        },
+        {
+          id: 34,
+          src: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          title: 'Tech Product Showcase',
+          description: 'Professional technology product photography with clean backgrounds',
+          date: 'March 2024'
+        },
+        {
+          id: 35,
+          src: 'https://images.pexels.com/photos/1024359/pexels-photo-1024359.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          title: 'Fashion Product Photography',
+          description: 'Clothing and accessories showcased on models and mannequins',
+          date: 'February 2024'
+        },
+        {
+          id: 36,
+          src: 'https://images.pexels.com/photos/704971/pexels-photo-704971.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          title: 'Beauty Product Photography',
+          description: 'Cosmetics and beauty products with professional lighting',
           date: 'January 2024'
         }
       ]

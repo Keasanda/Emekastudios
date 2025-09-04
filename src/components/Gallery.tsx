@@ -24,7 +24,8 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     { id: 'portrait', name: 'Portraits' },
     { id: 'event', name: 'Events' },
     { id: 'lifestyle', name: 'Lifestyle' },
-    { id: 'corporate', name: 'Corporate' }
+    { id: 'corporate', name: 'Corporate' },
+    { id: 'product', name: 'Product' } // Added Product Photography
   ];
 
   const galleryImages: GalleryImage[] = [
@@ -148,6 +149,36 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
       title: 'Executive Portraits',
       category: 'corporate',
       description: 'High-end executive and leadership portraits'
+    },
+
+    // Product Photography
+    {
+      id: 17,
+      src: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      title: 'E-commerce Product Shot',
+      category: 'product',
+      description: 'Clean product photography for online stores'
+    },
+    {
+      id: 18,
+      src: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      title: 'Lifestyle Product Photography',
+      category: 'product',
+      description: 'Products shown in natural use contexts'
+    },
+    {
+      id: 19,
+      src: 'https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      title: 'Food Photography',
+      category: 'product',
+      description: 'Appetizing food and beverage photography'
+    },
+    {
+      id: 20,
+      src: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      title: 'Tech Product Showcase',
+      category: 'product',
+      description: 'Professional technology product photography'
     }
   ];
 
