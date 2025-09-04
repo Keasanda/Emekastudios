@@ -31,28 +31,28 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Wedding Photography
     {
       id: 1,
-      src: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/x87JZhq1/Screenshot-2025-09-04-162751.png',
       title: 'Romantic Garden Wedding',
       category: 'wedding',
       description: 'A beautiful outdoor ceremony captured in golden hour light'
     },
     {
       id: 2,
-      src: 'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/sXPCqhXQ/Screenshot-2025-09-04-162843.png',
       title: 'Elegant Reception',
       category: 'wedding',
       description: 'Celebration moments filled with joy and laughter'
     },
     {
       id: 3,
-      src: 'https://images.pexels.com/photos/1729931/pexels-photo-1729931.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/mDs0Ygwb/Screenshot-2025-09-04-162910.png',
       title: 'Wedding Ceremony',
       category: 'wedding',
       description: 'Sacred moments of love and commitment'
     },
     {
       id: 4,
-      src: 'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/gkZHWHpT/Screenshot-2025-09-04-162725.png',
       title: 'Bridal Portrait',
       category: 'wedding',
       description: 'Stunning bridal photography with natural lighting'
@@ -61,28 +61,28 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Portrait Photography
     {
       id: 5,
-      src: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/R0YVTfYc/Screenshot-2025-09-04-163005.png',
       title: 'Family Portrait Session',
       category: 'portrait',
       description: 'Capturing family bonds and connections'
     },
     {
       id: 6,
-      src: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/1tNR7Xxb/Screenshot-2025-09-04-163020.png',
       title: 'Senior Portraits',
       category: 'portrait',
       description: 'Graduation memories that last a lifetime'
     },
     {
       id: 7,
-      src: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/mgq0Xwb2/Screenshot-2025-09-04-164935.png',
       title: 'Professional Headshots',
       category: 'portrait',
       description: 'Corporate headshots with personality'
     },
     {
       id: 8,
-      src: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/wjtrmmhK/Screenshot-2025-09-04-163218.png',
       title: 'Maternity Session',
       category: 'portrait',
       description: 'Beautiful expecting mother portraits'
@@ -91,21 +91,21 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Event Photography
     {
       id: 9,
-      src: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/FKJsDpLh/Dimakatso-Lebelo25.jpg',
       title: 'Corporate Event',
       category: 'event',
       description: 'Professional business gathering documentation'
     },
     {
       id: 10,
-      src: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/NjzWCw6H/2025-06-01-kwa-Ace-lounge-003.jpg',
       title: 'Birthday Celebration',
       category: 'event',
       description: 'Joyful birthday party moments'
     },
     {
       id: 11,
-      src: 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/x85Zvrjq/2025-07-14-Mphidi-Art-Gallery-05.jpg',
       title: 'Conference Coverage',
       category: 'event',
       description: 'Professional conference and networking event'
@@ -114,21 +114,21 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Lifestyle Photography
     {
       id: 12,
-      src: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/3xTPPZVK/2025-06-06-Sere-Mhati-03.jpg',
       title: 'Urban Lifestyle',
       category: 'lifestyle',
       description: 'City life and urban exploration'
     },
     {
       id: 13,
-      src: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/W3hKMYF7/2025-06-06-Sere-Mhati-02.jpg',
       title: 'Fashion Lifestyle',
       category: 'lifestyle',
       description: 'Contemporary fashion and style photography'
     },
     {
       id: 14,
-      src: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/26RvwV3X/2025-06-12-SIKHO-C-023.jpg',
       title: 'Outdoor Adventure',
       category: 'lifestyle',
       description: 'Adventure and outdoor lifestyle captures'
@@ -137,14 +137,14 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Corporate Photography
     {
       id: 15,
-      src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/y6T1xwPq/KYIB-26.jpg',
       title: 'Corporate Team',
       category: 'corporate',
       description: 'Professional team photography for businesses'
     },
     {
       id: 16,
-      src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/6Qzcy6y2/2025-06-06-Rich-Aunties-77.jpg',
       title: 'Executive Portraits',
       category: 'corporate',
       description: 'High-end executive and leadership portraits'
@@ -169,7 +169,7 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
               <span>Back to Home</span>
             </button>
             <h1 className="text-2xl font-bold text-gray-200">
-              Photography <span className="text-orange-500">Gallery</span>
+              Photography Gallery
             </h1>
             <div></div>
           </div>

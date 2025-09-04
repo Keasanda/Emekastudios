@@ -37,7 +37,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
     {
       id: 3,
       category: 'portrait',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      image: 'https://i.postimg.cc/Ss3QVDFq/EME2774.jpg',
       title: 'Portrait Sessions',
       description: 'Family, senior, and professional headshots',
       count: '100+ Sessions'
@@ -45,7 +45,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
     {
       id: 4,
       category: 'event',
-      image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      image: 'https://i.postimg.cc/26hjcnzZ/EME8299.jpg',
       title: 'Event Photography',
       description: 'Birthdays, conferences, and special celebrations',
       count: '75+ Events'
@@ -53,7 +53,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
     {
       id: 5,
       category: 'lifestyle',
-      image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      image: 'https://i.postimg.cc/jS59dKng/2025-07-14-Mphidi-Art-Gallery-23.jpg',
       title: 'Lifestyle Photography',
       description: 'Urban, fashion, and adventure photography',
       count: '40+ Shoots'
