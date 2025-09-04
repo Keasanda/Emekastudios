@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = ({ onGalleryClick }) => {
       
       <div className="relative z-10 text-center text-white max-w-3xl mx-auto px-4">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in text-gray-200">
-          Emeka Studios 
+          
           <span className="text-orange-500 block text-xl md:text-5xl mt-4 md:mt-6">
             Bringing stories to life through photography, video, and content creation.
           </span>

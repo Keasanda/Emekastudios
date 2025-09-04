@@ -62,7 +62,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
     {
       id: 6,
       category: 'product',
-      image: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      image: 'https://i.postimg.cc/RZDXrsHY/2025-06-12-SIKHO-C-103.jpg',
       title: 'Product Photography',
       description: 'Professional product shots for e-commerce and marketing',
       count: '60+ Products'

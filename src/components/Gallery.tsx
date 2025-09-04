@@ -62,7 +62,7 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Portrait Photography
     {
       id: 5,
-      src: 'https://i.postimg.cc/R0YVTfYc/Screenshot-2025-09-04-163005.png',
+      src: 'https://i.postimg.cc/9MjPVvFL/Alvada-4.jpg',
       title: 'Family Portrait Session',
       category: 'portrait',
       description: 'Capturing family bonds and connections'
@@ -83,7 +83,7 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     },
     {
       id: 8,
-      src: 'https://i.postimg.cc/wjtrmmhK/Screenshot-2025-09-04-163218.png',
+      src: 'https://i.postimg.cc/Y9spQwG3/48-Diana-Tsutsa.jpg',
       title: 'Maternity Session',
       category: 'portrait',
       description: 'Beautiful expecting mother portraits'
@@ -92,21 +92,21 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Event Photography
     {
       id: 9,
-      src: 'https://i.postimg.cc/FKJsDpLh/Dimakatso-Lebelo25.jpg',
+      src: 'https://i.postimg.cc/pVzTzwTW/EME8228-2.jpg',
       title: 'Corporate Event',
       category: 'event',
       description: 'Professional business gathering documentation'
     },
     {
       id: 10,
-      src: 'https://i.postimg.cc/NjzWCw6H/2025-06-01-kwa-Ace-lounge-003.jpg',
+      src: 'https://i.postimg.cc/yYn7TszH/EME8142-1.jpg',
       title: 'Birthday Celebration',
       category: 'event',
       description: 'Joyful birthday party moments'
     },
     {
       id: 11,
-      src: 'https://i.postimg.cc/x85Zvrjq/2025-07-14-Mphidi-Art-Gallery-05.jpg',
+      src: 'https://i.postimg.cc/1tNR7Xxb/Screenshot-2025-09-04-163020.png',
       title: 'Conference Coverage',
       category: 'event',
       description: 'Professional conference and networking event'
@@ -154,28 +154,28 @@ const Gallery: React.FC<GalleryProps> = ({ onBack, onCategorySelect }) => {
     // Product Photography
     {
       id: 17,
-      src: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/ncmvsS8B/2025-06-06-Rich-Aunties-01.jpg',
       title: 'E-commerce Product Shot',
       category: 'product',
       description: 'Clean product photography for online stores'
     },
     {
       id: 18,
-      src: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/FFycbWs4/2025-06-06-Sere-Mhati-19.jpg',
       title: 'Lifestyle Product Photography',
       category: 'product',
       description: 'Products shown in natural use contexts'
     },
     {
       id: 19,
-      src: 'https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/fbzgZt23/2025-06-06-Rich-Aunties-03.jpg',
       title: 'Food Photography',
       category: 'product',
       description: 'Appetizing food and beverage photography'
     },
     {
       id: 20,
-      src: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      src: 'https://i.postimg.cc/XqsYHyzw/2025-06-03-Nakai-Beauty-Products-40.jpg',
       title: 'Tech Product Showcase',
       category: 'product',
       description: 'Professional technology product photography'

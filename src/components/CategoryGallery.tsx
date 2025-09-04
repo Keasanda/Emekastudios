@@ -72,21 +72,21 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
       images: [
         {
           id: 7,
-          src: 'https://i.postimg.cc/R0YVTfYc/Screenshot-2025-09-04-163005.png',
+          src: 'https://i.postimg.cc/Y9spQwG3/48-Diana-Tsutsa.jpg',
           title: 'Family Portrait Session',
           description: 'Capturing family bonds and connections in a natural outdoor setting',
           date: 'June 2024'
         },
         {
           id: 8,
-          src: 'https://i.postimg.cc/1tNR7Xxb/Screenshot-2025-09-04-163020.png',
+          src: 'https://i.postimg.cc/9MjPVvFL/Alvada-4.jpg',
           title: 'Senior Portraits',
           description: 'Graduation memories that last a lifetime with professional styling',
           date: 'May 2024'
         },
         {
           id: 9,
-          src: 'https://i.postimg.cc/mgq0Xwb2/Screenshot-2025-09-04-164935.png',
+          src: 'https://i.postimg.cc/66VK9Rzc/Akido-Malabela-4.jpg',
           title: 'Professional Headshots',
           description: 'Corporate headshots with personality and professional appeal',
           date: 'April 2024'
@@ -120,42 +120,42 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
       images: [
         {
           id: 13,
-          src: 'https://i.postimg.cc/NjzWCw6H/2025-06-01-kwa-Ace-lounge-003.jpg',
+          src: 'https://i.postimg.cc/pVzTzwTW/EME8228-2.jpg',
           title: 'Corporate Event',
           description: 'Professional business gathering documentation with attention to detail',
           date: 'June 2024'
         },
         {
           id: 14,
-          src: 'https://i.postimg.cc/x85Zvrjq/2025-07-14-Mphidi-Art-Gallery-05.jpg',
+          src: 'https://i.postimg.cc/yYn7TszH/EME8142-1.jpg',
           title: 'Birthday Celebration',
           description: 'Joyful birthday party moments with family and friends',
           date: 'May 2024'
         },
         {
           id: 15,
-          src: 'https://i.postimg.cc/Zn6d2ZvK/Dimakatso-Lebelo31.jpg',
+          src: 'https://i.postimg.cc/8PkSc9fn/EME8274.jpg',
           title: 'Conference Coverage',
           description: 'Professional conference and networking event documentation',
           date: 'April 2024'
         },
         {
           id: 16,
-          src: 'https://i.postimg.cc/FKJsDpLh/Dimakatso-Lebelo25.jpg',
+          src: 'https://i.postimg.cc/1tNR7Xxb/Screenshot-2025-09-04-163020.png',
           title: 'Product Launch',
           description: 'Corporate product launch event with media coverage',
           date: 'March 2024'
         },
         {
           id: 17,
-          src: 'https://i.postimg.cc/2jTmdMK4/IMG-0960.jpg',
+          src: 'https://i.postimg.cc/9Fkn2nd9/Screenshot-2025-09-04-220722.png',
           title: 'Charity Gala',
           description: 'Elegant charity fundraising event with VIP guests',
           date: 'February 2024'
         },
         {
           id: 18,
-          src: 'https://i.postimg.cc/y6T1xwPq/KYIB-26.jpg',
+          src: 'https://i.postimg.cc/R0YVTfYc/Screenshot-2025-09-04-163005.png',
           title: 'Awards Ceremony',
           description: 'Prestigious awards ceremony with professional coverage',
           date: 'January 2024'
@@ -264,42 +264,42 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
       images: [
         {
           id: 31,
-          src: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          src: 'https://i.postimg.cc/ncmvsS8B/2025-06-06-Rich-Aunties-01.jpg',
           title: 'E-commerce Product Shot',
           description: 'Clean product photography for online stores and catalogs',
           date: 'June 2024'
         },
         {
           id: 32,
-          src: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          src: 'https://i.postimg.cc/FFycbWs4/2025-06-06-Sere-Mhati-19.jpg',
           title: 'Lifestyle Product Photography',
           description: 'Products shown in natural use contexts and environments',
           date: 'May 2024'
         },
         {
           id: 33,
-          src: 'https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          src: 'https://i.postimg.cc/fbzgZt23/2025-06-06-Rich-Aunties-03.jpg',
           title: 'Food Photography',
           description: 'Appetizing food and beverage photography for menus and marketing',
           date: 'April 2024'
         },
         {
           id: 34,
-          src: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          src: 'https://i.postimg.cc/XqsYHyzw/2025-06-03-Nakai-Beauty-Products-40.jpg',
           title: 'Tech Product Showcase',
           description: 'Professional technology product photography with clean backgrounds',
           date: 'March 2024'
         },
         {
           id: 35,
-          src: 'https://images.pexels.com/photos/1024359/pexels-photo-1024359.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          src: 'https://i.postimg.cc/kGB0C65N/Basetsana-Ntamu-6.jpg',
           title: 'Fashion Product Photography',
           description: 'Clothing and accessories showcased on models and mannequins',
           date: 'February 2024'
         },
         {
           id: 36,
-          src: 'https://images.pexels.com/photos/704971/pexels-photo-704971.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+          src: 'https://i.postimg.cc/HkdCcLvm/Akido-Malabela-5.jpg',
           title: 'Beauty Product Photography',
           description: 'Cosmetics and beauty products with professional lighting',
           date: 'January 2024'
