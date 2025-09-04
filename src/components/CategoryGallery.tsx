@@ -163,7 +163,7 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
       ]
     },
     lifestyle: {
-      title: 'Lifestyle Photography',
+      title: 'Lifestyle Photography & Real Estate',
       description: 'Authentic lifestyle photography that captures real moments and genuine emotions',
       images: [
         {
@@ -182,7 +182,7 @@ const CategoryGallery: React.FC<CategoryGalleryProps> = ({ category, onBack }) =
         },
         {
           id: 21,
-          src: 'https://i.postimg.cc/26RvwV3X/2025-06-12-SIKHO-C-023.jpg',
+          src: 'https://i.postimg.cc/Y9Y4qqDY/26.png',
           title: 'Outdoor Adventure',
           description: 'Adventure and outdoor lifestyle captures in natural settings',
           date: 'April 2024'

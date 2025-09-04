@@ -14,7 +14,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
     { id: 'wedding', name: 'Weddings' },
     { id: 'portrait', name: 'Portraits' },
     { id: 'event', name: 'Events' },
-    { id: 'lifestyle', name: 'Lifestyle' }
+    { id: 'lifestyle', name: 'Lifestyle & Real Estate' }
   ];
 
   const portfolioItems = [
@@ -54,7 +54,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onGalleryClick, onCategorySelect 
       id: 5,
       category: 'lifestyle',
       image: 'https://i.postimg.cc/jS59dKng/2025-07-14-Mphidi-Art-Gallery-23.jpg',
-      title: 'Lifestyle Photography',
+      title: 'Lifestyle Photography & Real Estate',
       description: 'Urban, fashion, and adventure photography',
       count: '40+ Shoots'
     },
